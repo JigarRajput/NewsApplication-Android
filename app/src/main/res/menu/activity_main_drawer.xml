@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/newsicon"
+            android:menuCategory="secondary"
+            android:title="BBC" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/newsicon"
+            android:menuCategory="secondary"
+            android:title="Divya Bhaskar" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/newsicon"
+            android:menuCategory="secondary"
+            android:title="Gujarat Samachar" />
+        <item
+            android:id="@+id/sandesh"
+            android:icon="@drawable/newsicon"
+            android:menuCategory="secondary"
+            android:title="Sandesh" />
+        <item
+            android:id="@+id/TOI"
+            android:icon="@drawable/newsicon"
+            android:menuCategory="secondary"
+            android:title="Times Of India" />
+
+    </group>
+</menu>
