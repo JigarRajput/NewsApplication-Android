@@ -29,11 +29,6 @@ public class GalleryFragment extends Fragment {
         WebView webView = root.findViewById(R.id.webViewDivyaBhaskar);
         webView.loadUrl("https://www.divyabhaskar.co.in/");
         webView.setWebViewClient(new WebViewController());
-        webView.getSettings().setUseWideViewPort(true);
-        webView.getSettings().setLoadWithOverviewMode(true);
-        webView.getSettings().setSupportZoom(true);
-        webView.getSettings().setBuiltInZoomControls(true);
-
         return root;
     }
 }

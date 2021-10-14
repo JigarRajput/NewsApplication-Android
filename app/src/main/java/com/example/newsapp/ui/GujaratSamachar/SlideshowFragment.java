@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import androidx.annotation.NonNull;
@@ -26,10 +27,8 @@ public class SlideshowFragment extends Fragment {
         WebView webView = (WebView) root.findViewById(R.id.webViewGujaratSamachar);
         webView.loadUrl("https://www.gujaratsamachar.com/");
         webView.setWebViewClient(new WebViewController());
-        webView.getSettings().setUseWideViewPort(true);
-        webView.getSettings().setLoadWithOverviewMode(true);
-        webView.getSettings().setSupportZoom(true);
-        webView.getSettings().setBuiltInZoomControls(true);
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
         return root;
     }
 }
